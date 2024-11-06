@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Calculadora IMC</h1>
+
+    <form onsubmit="calcularIMC(event)">
+        <div class="form-group">
+            <label for="peso"></label>
+            <input type="number" id="peso" name="peso" placeholder="Peso (kg)" step="0.01" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="altura"></label>
+            <input type="number" id="altura" name="altura" placeholder="Altura (m)" step="0.01" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Calcular IMC">
+        </div>
+
+        <div class="resultado" id="resultado"></div>
+    </form>
+
+    <footer>
+        <p>&copy; Wladimi Sabóia. Todos os direitos reservados.</p>
+        <p><a href="mail:wladsaboia@gmail.com">wladsaboia@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
